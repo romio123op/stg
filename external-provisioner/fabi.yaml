@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: site-staging-nfs-pvc
+  annotations:
+    # specify StorageClass name
+    volume.beta.kubernetes.io/storage-class: nfs-client
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      # volume size
+      storage: 10Gi

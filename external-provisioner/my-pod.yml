@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: my-mginx
+spec:
+  containers:
+    - name: my-mginx
+      image: nginx
+      ports:
+        - containerPort: 80
+          name: web
+      volumeMounts:
+      - mountPath: /usr/share/nginx/html
+        name: nginx-pvc
+  volumes:
+    - name: nginx-pvc
+      persistentVolumeClaim:
+        # PVC name you created
+        claimName: nfs-pvc

@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: site-dev
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: site-staging

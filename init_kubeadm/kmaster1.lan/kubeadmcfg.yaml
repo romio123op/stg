@@ -1,0 +1,18 @@
+apiVersion: "kubeadm.k8s.io/v1beta2"
+kind: ClusterConfiguration
+kubernetesVersion: stable
+apiServer:
+  certSANs:
+  - "k8s.loabalancer.lan"
+controlPlaneEndpoint: "k8s.loabalancer.lan:6443"
+etcd:
+    external:
+        endpoints:
+        - https://kmaster1.lan:2379
+        - https://kmaster2.lan:2379
+        - https://kmaster3.lan:2379
+        caFile: /etc/etcd/ca.pem
+        certFile: /etc/etcd/kubernetes.pem
+        keyFile: /etc/etcd/kubernetes-key.pem
+networking:
+  podSubnet: 10.40.0.0/16

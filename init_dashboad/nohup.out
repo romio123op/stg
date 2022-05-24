@@ -1,0 +1,3 @@
+Forwarding from 0.0.0.0:8443 -> 8443
+Handling connection for 8443
+E0630 14:13:45.082654  559330 portforward.go:233] lost connection to pod

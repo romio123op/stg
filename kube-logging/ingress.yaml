@@ -1,0 +1,15 @@
+apiVersion: networking.k8s.io/v1beta1
+kind: Ingress
+metadata:
+  name: efk-k8s-ingress
+  namespace: kube-logging
+spec:
+  rules:
+  - host: "efkdev.ipos.vn"
+    http:
+      paths:
+      - path:
+        backend:
+          serviceName: kibana
+          servicePort: 5601
+

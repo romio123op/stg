@@ -1,0 +1,45 @@
+Forwarding from 0.0.0.0:8443 -> 8443
+Handling connection for 8443
+Handling connection for 8443
+E0630 14:47:13.224489  560715 portforward.go:400] an error occurred forwarding 8443 -> 8443: error forwarding port 8443 to pod c9a2472263f7e2ad816edb72969e4bf2f8a9e4d47c74902f8568898ed70b35c4, uid : container not running (c9a2472263f7e2ad816edb72969e4bf2f8a9e4d47c74902f8568898ed70b35c4)
+Handling connection for 8443
+E0630 14:47:13.234209  560715 portforward.go:400] an error occurred forwarding 8443 -> 8443: error forwarding port 8443 to pod c9a2472263f7e2ad816edb72969e4bf2f8a9e4d47c74902f8568898ed70b35c4, uid : container not running (c9a2472263f7e2ad816edb72969e4bf2f8a9e4d47c74902f8568898ed70b35c4)
+Handling connection for 8443
+E0630 14:47:13.253472  560715 portforward.go:400] an error occurred forwarding 8443 -> 8443: error forwarding port 8443 to pod c9a2472263f7e2ad816edb72969e4bf2f8a9e4d47c74902f8568898ed70b35c4, uid : container not running (c9a2472263f7e2ad816edb72969e4bf2f8a9e4d47c74902f8568898ed70b35c4)
+Handling connection for 8443
+Handling connection for 8443
+Handling connection for 8443
+Handling connection for 8443
+Handling connection for 8443
+Handling connection for 8443
+E0630 14:47:43.262045  560715 portforward.go:340] error creating error stream for port 8443 -> 8443: Timeout occurred
+E0630 14:47:45.181333  560715 portforward.go:362] error creating forwarding stream for port 8443 -> 8443: Timeout occurred
+E0630 14:47:45.757151  560715 portforward.go:362] error creating forwarding stream for port 8443 -> 8443: Timeout occurred
+E0630 14:47:46.633114  560715 portforward.go:340] error creating error stream for port 8443 -> 8443: Timeout occurred
+Handling connection for 8443
+E0630 14:47:47.761376  560715 portforward.go:362] error creating forwarding stream for port 8443 -> 8443: Timeout occurred
+Handling connection for 8443
+E0630 14:47:52.762310  560715 portforward.go:362] error creating forwarding stream for port 8443 -> 8443: Timeout occurred
+Handling connection for 8443
+E0630 14:48:16.640445  560715 portforward.go:340] error creating error stream for port 8443 -> 8443: Timeout occurred
+E0630 14:48:17.769359  560715 portforward.go:362] error creating forwarding stream for port 8443 -> 8443: Timeout occurred
+Handling connection for 8443
+Handling connection for 8443
+E0630 14:48:38.638790  560715 portforward.go:362] error creating forwarding stream for port 8443 -> 8443: Timeout occurred
+E0630 14:48:48.057132  560715 portforward.go:340] error creating error stream for port 8443 -> 8443: Timeout occurred
+Handling connection for 8443
+E0630 14:48:52.797763  560715 portforward.go:362] error creating forwarding stream for port 8443 -> 8443: Timeout occurred
+Handling connection for 8443
+Handling connection for 8443
+E0630 14:49:18.066307  560715 portforward.go:362] error creating forwarding stream for port 8443 -> 8443: Timeout occurred
+Handling connection for 8443
+E0630 14:49:25.033221  560715 portforward.go:340] error creating error stream for port 8443 -> 8443: Timeout occurred
+Handling connection for 8443
+E0630 14:49:40.605532  560715 portforward.go:362] error creating forwarding stream for port 8443 -> 8443: Timeout occurred
+E0630 14:49:49.095258  560715 portforward.go:362] error creating forwarding stream for port 8443 -> 8443: Timeout occurred
+E0630 14:50:00.066189  560715 portforward.go:340] error creating error stream for port 8443 -> 8443: Timeout occurred
+Handling connection for 8443
+Handling connection for 8443
+E0630 14:50:30.074755  560715 portforward.go:362] error creating forwarding stream for port 8443 -> 8443: Timeout occurred
+E0630 14:50:40.625264  560715 portforward.go:362] error creating forwarding stream for port 8443 -> 8443: Timeout occurred
+E0630 14:51:30.625520  560715 portforward.go:233] lost connection to pod

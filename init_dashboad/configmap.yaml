@@ -1,0 +1,7 @@
+apiVersion: v1
+data: |
+  ssl-redirect: true
+kind: ConfigMap
+metadata:
+  name: ingress-controller-leader-haproxy
+  namespace: ingress-controller

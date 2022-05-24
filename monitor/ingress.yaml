@@ -1,0 +1,22 @@
+apiVersion: networking.k8s.io/v1beta1
+kind: Ingress
+metadata:
+  name: monitor-k8s-ingress
+  namespace: monitoring
+spec:
+  rules:
+  - host: "monitor-k8s.ipos.vn"
+    http:
+      paths:
+      - path:
+        backend:
+          serviceName: grafana
+          servicePort: 80
+
+  - host: "monitor.daututhucanchannuoi.vn"
+    http:
+      paths:
+        - path:
+          backend:
+            serviceName: grafana
+            servicePort: 80

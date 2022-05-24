@@ -1,0 +1,13 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: rb-dev
+  namespace: site-product
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: clr-dev
+subjects:
+- kind: ServiceAccount
+  name: fabidev
+  namespace: site-product

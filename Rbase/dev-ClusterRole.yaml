@@ -1,0 +1,88 @@
+kind: ClusterRole
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: clr-dev
+rules:
+- resources:
+  - namespaces
+  verbs:
+  - get
+  - list
+  - watch
+  apiGroups:
+  - ''
+- resources:
+  - deployments
+  - daemonsets
+  - replicasets
+  - services
+  - ingress
+  - secrets
+  - nodes
+  verbs:
+  - create
+  - get
+  - list
+  - patch
+  - watch
+  apiGroups:
+  - apps
+  - ""
+- resources:
+  - pods
+  verbs:
+  - create
+  - delete
+  - deletecollection
+  - get
+  - list
+  - patch
+  - update
+  - watch
+  apiGroups:
+  - ""
+---
+
+kind: ClusterRole
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: clr-teamlead
+rules:
+- resources:
+  - namespaces
+  verbs:
+  - get
+  - list
+  - watch
+  apiGroups:
+  - ''
+- resources:
+  - deployments
+  - daemonsets
+  - replicasets
+  - services
+  - ingress
+  - secrets
+  - nodes
+  verbs:
+  - create
+  - get
+  - list
+  - patch
+  - watch
+  apiGroups:
+  - apps
+  - ""
+- resources:
+  - pods
+  verbs:
+  - create
+  - delete
+  - deletecollection
+  - get
+  - list
+  - patch
+  - update
+  - watch
+  apiGroups:
+  - ""

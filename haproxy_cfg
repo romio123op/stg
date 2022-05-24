@@ -1,0 +1,15 @@
+frontend kubernetes
+bind 0.0.0.0:6443
+option tcplog
+mode tcp
+default_backend kubernetes-master-nodes
+
+
+backend kubernetes-master-nodes
+mode tcp
+balance roundrobin
+option tcp-check
+server 192.168.10.200 192.168.10.200:6443 check fall 3 rise 2
+server 192.168.10.201 192.168.10.201:6443 check fall 3 rise 2
+server 192.168.10.202 192.168.10.200:6443 check fall 3 rise 2
+

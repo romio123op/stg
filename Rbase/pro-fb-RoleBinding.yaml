@@ -1,0 +1,13 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: rb-dev
+  namespace: site-product-fb
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: clr-dev
+subjects:
+- kind: ServiceAccount
+  name: foodbookdev
+  namespace: site-product-fb

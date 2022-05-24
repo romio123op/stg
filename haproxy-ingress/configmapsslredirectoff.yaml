@@ -1,0 +1,33 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: haproxy-configmap
+  namespace: haproxy-controller
+data:
+  servers-increment: "42"
+  ssl-redirect: "OFF"
+#  ssl-redirect: "true"
+  check: "enabled"
+  forwarded-for: "enabled"
+  load-balance: "roundrobin"
+  maxconn: "20000"
+#  nbthread: "1"
+#  rate-limit: "OFF"
+#  rate-limit-expire: "30m"
+#  rate-limit-interval: "10s"
+#  rate-limit-size: "100k"
+#  servers-increment: "42"
+#  servers-increment-max-disabled: "66"
+  ssl-certificate: "kubernetes-dashboard/kubernetes-dashboard-certs"
+#  ssl-numproc: "1"
+#  ssl-redirect: "ON"
+  ssl-redirect-code: "302"
+#  timeout-http-request: "5s"
+#  timeout-connect: "5s"
+#  timeout-client: "50s"
+#  timeout-queue: "5s"
+#  timeout-server: "50s"
+#  timeout-tunnel: "1h"
+  timeout-http-keep-alive: "1m"
+#  whitelist: "127.0.0.1, 192.168.50.1/24"
+#  whitelist-with-rate-limit: "ON"
